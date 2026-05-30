@@ -206,19 +206,16 @@ async function carregar() {
 
     try {
 
-        const response = await fetch(
-            "./jogos.json"
-        );
+        const response = await fetch("./jogos.json");
 
         if (!response.ok) {
-            throw new Error(
-                "Erro HTTP: " + response.status
-            );
+            throw new Error("Erro HTTP: " + response.status);
         }
 
         const data = await response.json();
 
-        todosArquivos = data.files || [];
+        // ✅ CORREÇÃO AQUI
+        todosArquivos = data;
 
         loadingDiv.style.display = "none";
 
@@ -230,7 +227,7 @@ async function carregar() {
 
         container.innerHTML =
             "<div class='empty-message'>" +
-            "Erro ao carregar lista do Internet Archive.<br><br>" +
+            "Erro ao carregar lista.<br><br>" +
             err.message +
             "</div>";
 
