@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TH Store</title>
+
+    <style>
+        body {
+            background: #1a1a1a;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn-filtro {
+            margin: 5px;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            cursor: pointer;
+        }
+
+        .btn-filtro.active {
+            background: #0078d7;
+        }
+
+        .card {
+            display: block;
+            background: #2a2a2a;
+            margin: 10px;
+            padding: 12px;
+            border: 1px solid #444;
+            text-align: left;
+            color: white;
+            text-decoration: none;
+        }
+
+        .card:hover {
+            background: #333;
+        }
+
+        .row {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .name {
+            float: left;
+            font-weight: bold;
+            max-width: 70%;
+            word-break: break-word;
+        }
+
+        .size {
+            float: right;
+            color: #aaa;
+        }
+
+        .empty-message {
+            margin-top: 20px;
+            color: #ffcc00;
+        }
+
+        #loading {
+            margin: 10px;
+        }
+
+        /* BOTÃO ATUALIZAR */
+        .btn-update {
+            margin-top: 25px;
+            padding: 12px 20px;
+            background: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-update:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Baixe arquivos .PKG para o PS3</h2>
+
+<div>
+    <button class="btn-filtro active" onclick="filtrar('TODOS', this)">TODOS</button>
+    <button class="btn-filtro" onclick="filtrar('PS1', this)">PS1</button>
+    <button class="btn-filtro" onclick="filtrar('PS2', this)">PS2</button>
+    <button class="btn-filtro" onclick="filtrar('PS3', this)">PS3</button>
+</div>
+
+<div id="loading">Carregando...</div>
+
+<div id="lista-loja"></div>
+
+<!-- BOTÃO NOVO -->
+<button class="btn-update" onclick="atualizarPagina()">
+    Atualizar Lista
+</button>
+
+<script>
+
+var urlAPI = "https://th-store.onrender.com/api/jogos";
+
+var container = document.getElementById('lista-loja');
+var loadingDiv = document.getElementById('loading');
+
+var todosArquivos = [];
+var filtroAtual = "TODOS";
+
+function atualizarPagina() {
+    location.reload();
+}
+
+function formatBytes(bytes) {
+
+    bytes = parseInt(bytes || 0);
+
+    if (!bytes) return "Desconhecido";
+
+    var sizes = ["Bytes", "KB", "MB", "GB"];
+    var i = 0;
+
+    while (bytes >= 1024 && i < 3) {
+        bytes = bytes / 1024;
+        i++;
+    }
+
+    return Math.round(bytes * 100) / 100 + " " + sizes[i];
+}
+
+function filtrar(tipo, botao) {
+
+    filtroAtual = tipo;
+
+    var botoes = document.getElementsByClassName("btn-filtro");
+
+    for (var i = 0; i < botoes.length; i++) {
+        botoes[i].className = "btn-filtro";
+    }
+
+    botao.className = "btn-filtro active";
+
+    renderizar();
+}
+
+function renderizar() {
+
+    container.innerHTML = "";
+
+    var encontrados = 0;
+
+    for (var i = 0; i < todosArquivos.length; i++) {
+
+        var file = todosArquivos[i];
+
+        if (!file.name) continue;
+
+        if (file.name.indexOf(".pkg") === -1) continue;
+
+        if (filtroAtual !== "TODOS") {
+
+            if (file.name.indexOf(filtroAtual + "/") !== 0)
+                continue;
+        }
+
+        encontrados++;
+
+        var link =
+            "https://archive.org/download/ps3_jogos/" +
+            file.name;
+
+        var a = document.createElement("a");
+        a.className = "card";
+        a.href = link;
+
+        a.innerHTML =
+            "<div class='row'>" +
+                "<div class='name'>" + file.name + "</div>" +
+                "<div class='size'>" + formatBytes(file.size) + "</div>" +
+            "</div>";
+
+        container.appendChild(a);
+    }
+
+    if (encontrados === 0) {
+        container.innerHTML = "<div class='empty-message'>Nenhum arquivo encontrado</div>";
+    }
+}
+
+function carregar() {
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", urlAPI, true);
+
+    xhr.onreadystatechange = function () {
+
+        if (xhr.readyState !== 4) return;
+
+        loadingDiv.style.display = "none";
+
+        if (xhr.status !== 200) {
+            container.innerHTML = "Erro ao carregar API";
+            return;
+        }
+
+        todosArquivos = JSON.parse(xhr.responseText);
+
+        renderizar();
+    };
+
+    xhr.send();
+}
+
+carregar();
+
+</script>
+
+</body>
+</html>
