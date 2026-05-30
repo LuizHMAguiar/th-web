@@ -202,37 +202,36 @@ function renderizar() {
     }
 }
 
-async function carregar() {
+function carregar() {
 
-    try {
+    loadingDiv.innerHTML = "Carregando...";
 
-        const response = await fetch("./jogos.json");
+    var xhr = new XMLHttpRequest();
 
-        if (!response.ok) {
-            throw new Error("Erro HTTP: " + response.status);
+    xhr.open("GET", "./jogos.json", true);
+
+    xhr.onreadystatechange = function () {
+
+        if (xhr.readyState !== 4) return;
+
+        if (xhr.status !== 200) {
+            container.innerHTML = "Erro HTTP: " + xhr.status;
+            return;
         }
 
-        const data = await response.json();
-
-        // ✅ CORREÇÃO AQUI
-        todosArquivos = data;
+        try {
+            todosArquivos = JSON.parse(xhr.responseText);
+        } catch (e) {
+            container.innerHTML = "Erro JSON";
+            return;
+        }
 
         loadingDiv.style.display = "none";
 
         renderizar();
+    };
 
-    } catch (err) {
-
-        loadingDiv.style.display = "none";
-
-        container.innerHTML =
-            "<div class='empty-message'>" +
-            "Erro ao carregar lista.<br><br>" +
-            err.message +
-            "</div>";
-
-        console.log(err);
-    }
+    xhr.send();
 }
 
 carregar();
