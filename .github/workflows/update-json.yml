@@ -1,0 +1,30 @@
+name: Atualizar jogos.json
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # a cada 1 hora
+  workflow_dispatch:       # botão manual no GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Gerar jogos.json
+        run: node gerar.js
+
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add jogos.json
+          git commit -m "Atualiza jogos.json" || echo "Sem mudanças"
+          git push
