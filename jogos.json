@@ -1,6 +1,42 @@
 [
   {
-    "name": "A lista será atualizada em breve",
-    "size": 1
+    "name": "PS2/Digimon World 4 (PS2) [PS2 Classics] [SLUS20836].pkg",
+    "source": "original",
+    "mtime": "1780076586",
+    "size": "1469425824",
+    "md5": "ef5f591897a8a0370e2d7919e6f16311",
+    "crc32": "56be5b19",
+    "sha1": "908b62d54624d402d115637640703025dd641772",
+    "format": "Unknown"
+  },
+  {
+    "name": "PS2/Guitar Hero (PS2).pkg",
+    "source": "original",
+    "mtime": "1780088663",
+    "size": "2324544640",
+    "md5": "8b0f9765a710862be62c6a72227f03ed",
+    "crc32": "3481bf1c",
+    "sha1": "2712ff0418e3248f69ea860eb19f543f1d7f6fe4",
+    "format": "Unknown"
+  },
+  {
+    "name": "PS2/The Simpsons Hit and Run (PS2).pkg",
+    "source": "original",
+    "mtime": "1780087643",
+    "size": "2179141904",
+    "md5": "1312c99a26ab17f2e4332cdcd03d72d5",
+    "crc32": "5da0afda",
+    "sha1": "1d64a68a9299e6925980743c2c848c8b4c846e09",
+    "format": "Unknown"
+  },
+  {
+    "name": "PS3/Guitar Hero III Legends of Rock.pkg",
+    "source": "original",
+    "mtime": "1780086568",
+    "size": "4362585264",
+    "md5": "b563a489817a32a82df1d6ec3e426c44",
+    "crc32": "583f77a2",
+    "sha1": "aa5eed3235636f58a5db5e51d5bac3fe66266933",
+    "format": "Unknown"
   }
 ]
