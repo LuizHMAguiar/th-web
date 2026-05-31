@@ -16,15 +16,36 @@
         .btn-filtro {
             margin: 5px;
             padding: 10px;
-            background: #333;
             color: white;
-            border: 1px solid #555;
+            background: #333;
+            border: 1px solid #444;
             cursor: pointer;
             font-size: 20px;
         }
 
+        .btn-filtro.btn-ps1.active {
+            background: #2d7b2d;
+            border-color: #256022;
+        }
+
+        .btn-filtro.btn-ps2.active {
+            background: #286b97;
+            border-color: #225778;
+        }
+
+        .btn-filtro.btn-ps3.active {
+            background: #bf7600;
+            border-color: #995f00;
+        }
+
+        .btn-filtro.btn-todos.active {
+            background: #cacaca;
+            color: black;
+            border-color: #444;
+        }
+
         .btn-filtro.active {
-            background: #0078d7;
+            filter: brightness(0.95);
         }
 
         .card {
@@ -82,6 +103,37 @@
         .btn-update:hover {
             background: #005fa3;
         }
+
+        .label-platform {
+            display: inline-block;
+            padding: 2px 8px;
+            margin-right: 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .label-ps1 {
+            background: #2d7b2d;
+            color: #e6ffe6;
+        }
+
+        .label-ps2 {
+            background: #286b97;
+            color: #e8f5ff;
+        }
+
+        .label-ps3 {
+            background: #bf7600;
+            color: #fff3cc;
+        }
+
+        .label-unknown {
+            background: #666;
+            color: #f0f0f0;
+        }
     </style>
 </head>
 
@@ -90,10 +142,10 @@
 <h2>Baixe arquivos .PKG para o PS3</h2>
 
 <div>
-    <button class="btn-filtro active" onclick="filtrar('TODOS', this)">TODOS</button>
-    <button class="btn-filtro" onclick="filtrar('PS1', this)">PS1</button>
-    <button class="btn-filtro" onclick="filtrar('PS2', this)">PS2</button>
-    <button class="btn-filtro" onclick="filtrar('PS3', this)">PS3</button>
+    <button class="btn-filtro btn-todos active" onclick="filtrar('TODOS', this)">TODOS</button>
+    <button class="btn-filtro btn-ps1" onclick="filtrar('PS1', this)">PS1</button>
+    <button class="btn-filtro btn-ps2" onclick="filtrar('PS2', this)">PS2</button>
+    <button class="btn-filtro btn-ps3" onclick="filtrar('PS3', this)">PS3</button>
 </div>
 
 <div id="loading">Carregando...</div>
@@ -144,16 +196,28 @@ function filtrar(tipo, botao) {
     var botoes = document.getElementsByClassName("btn-filtro");
 
     for (var i = 0; i < botoes.length; i++) {
-        botoes[i].className = "btn-filtro";
+        botoes[i].classList.remove("active");
     }
 
-    botao.className = "btn-filtro active";
+    botao.classList.add("active");
 
     renderizar();
 }
 
 function encodePathSegments(path) {
     return path.split("/").map(encodeURIComponent).join("/");
+}
+
+function displayName(name) {
+    if (!name) return name;
+    var index = name.indexOf("/");
+    return index === -1 ? name : name.slice(index + 1);
+}
+
+function sortFiles(files) {
+    files.sort(function (a, b) {
+        return displayName(a.name).localeCompare(displayName(b.name), undefined, { sensitivity: 'base' });
+    });
 }
 
 function renderizar() {
@@ -186,6 +250,10 @@ function renderizar() {
         var link = file.download_url ||
             "https://archive.org/download/ps3_jogos/" + encodePathSegments(file.name);
 
+        var badgeClass = file.platform ? file.platform.toLowerCase() : "unknown";
+        var badgeText = file.platform ? file.platform : "UNK";
+        var badge = "<span class='label-platform label-" + badgeClass + "'>" + badgeText + "</span>";
+
         var a = document.createElement("a");
 
         a.className = "card";
@@ -194,7 +262,7 @@ function renderizar() {
 
         a.innerHTML =
             "<div class='row'>" +
-                "<div class='name'>" + file.name + "</div>" +
+                "<div class='name'>" + badge + displayName(file.name) + "</div>" +
                 "<div class='size'>" + formatBytes(file.size) + "</div>" +
             "</div>";
 
@@ -234,6 +302,7 @@ function carregar() {
             return;
         }
 
+        sortFiles(todosArquivos);
         loadingDiv.style.display = "none";
 
         renderizar();

@@ -157,6 +157,12 @@ function pathEncodeSegments(path) {
   return path.split("/").map(encodeURIComponent).join("/");
 }
 
+function stripPrefix(name) {
+  if (!name) return name;
+  var index = name.indexOf("/");
+  return index === -1 ? name : name.slice(index + 1);
+}
+
 function buildDownloadUrl(server, file) {
   if (file.download_url) {
     return file.download_url;
@@ -223,6 +229,10 @@ async function gerar() {
     f.name && f.name.toLowerCase().includes(".pkg")
   );
   const unicos = uniqueByUrl(filtrados);
+
+  unicos.sort((a, b) => {
+    return stripPrefix(a.name).localeCompare(stripPrefix(b.name), undefined, { sensitivity: "base" });
+  });
 
   console.log("PKG filtrados:", filtrados.length);
   console.log("PKG únicos gravados:", unicos.length);
