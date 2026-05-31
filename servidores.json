@@ -5,5 +5,9 @@
   {
     "url": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare",
     "rootPlatform": "PS2"
+  },
+  {
+    "url": "https://archive.org/download/ps3-pkg-games",
+    "rootPlatform": "PS3"
   }
 ]
