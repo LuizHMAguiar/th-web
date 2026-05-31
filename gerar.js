@@ -3,6 +3,11 @@ const http = require("http");
 const https = require("https");
 const { URL } = require("url");
 
+// =========================================================================
+// PREENCHA COM A SUA CHAVE DA RAWG:
+// =========================================================================
+const RAWG_API_KEY = "SUA_CHAVE_AQUI"; 
+
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
     const parsedUrl = new URL(url);
@@ -31,6 +36,48 @@ function fetchJson(url) {
 
     request.on("error", reject);
   });
+}
+
+// Busca a capa na API RAWG de acordo com o nome e plataforma identificada
+async function buscarCapaDoJogo(nomeDoArquivo, plataforma) {
+  if (!RAWG_API_KEY || RAWG_API_KEY === "SUA_CHAVE_AQUI") {
+    return null;
+  }
+
+  // Mapeia as plataformas textuais para os IDs numéricos exigidos pela RAWG
+  const plataformaIds = {
+    "PS1": 27,
+    "PS2": 15,
+    "PS3": 16
+  };
+
+  const idPlataforma = plataformaIds[plataforma];
+  if (!idPlataforma) return null;
+
+  // Limpa o nome do arquivo para melhorar a busca (Ex: "PS3/Nier.pkg" -> "Nier")
+  let termoBusca = nomeDoArquivo
+    .split("/")
+    .pop() // Pega apenas a última parte após as barras
+    .replace(/\.pkg$/i, "") // Remove a extensão .pkg
+    .replace(/[_\-.]/g, " ") // Substitui underlines, traços e pontos por espaço
+    .trim();
+
+  // Se o nome limpo for muito curto ou inválido, ignora a requisição
+  if (termoBusca.length < 2) return null;
+
+  const url = `https://rawg.io{RAWG_API_KEY}&search=${encodeURIComponent(termoBusca)}&platforms=${idPlataforma}&page_size=1`;
+
+  try {
+    const data = await fetchJson(url);
+    if (data.results && data.results.length > 0) {
+      // Retorna a imagem de plano de fundo principal que serve perfeitamente como capa
+      return data.results[0].background_image || null;
+    }
+  } catch (err) {
+    console.error(`Aviso: Não foi possível obter capa para "${termoBusca}":`, err.message);
+  }
+
+  return null;
 }
 
 function normalizeServer(item) {
@@ -235,10 +282,25 @@ async function gerar() {
   });
 
   console.log("PKG filtrados:", filtrados.length);
-  console.log("PKG únicos gravados:", unicos.length);
+  console.log("PKG únicos encontrados:", unicos.length);
+
+  // Percorre cada jogo único buscando a respectiva capa de maneira assíncrona/ordenada
+  console.log("Iniciando busca de imagens de capa na API RAWG...");
+  let countCapas = 0;
+
+  for (const jogo of unicos) {
+    const urlCapa = await buscarCapaDoJogo(jogo.name, jogo.platform);
+    jogo.cover = urlCapa; // Adiciona a propriedade "cover" (String URL ou null)
+    
+    if (urlCapa) {
+      countCapas++;
+    }
+  }
+
+  console.log(`Processo de capas finalizado. Capas encontradas: ${countCapas}/${unicos.length}`);
 
   fs.writeFileSync("jogos.json", JSON.stringify(unicos, null, 2));
-  console.log("jogos.json atualizado");
+  console.log("jogos.json atualizado com as capas.");
 }
 
 gerar().catch(err => {
