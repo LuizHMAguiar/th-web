@@ -152,6 +152,10 @@ function filtrar(tipo, botao) {
     renderizar();
 }
 
+function encodePathSegments(path) {
+    return path.split("/").map(encodeURIComponent).join("/");
+}
+
 function renderizar() {
 
     container.innerHTML = "";
@@ -168,21 +172,25 @@ function renderizar() {
             continue;
 
         if (filtroAtual !== "TODOS") {
-
-            if (file.name.indexOf(filtroAtual + "/") !== 0)
-                continue;
+            if (file.platform) {
+                if (file.platform.toUpperCase() !== filtroAtual)
+                    continue;
+            } else {
+                if (file.name.indexOf(filtroAtual + "/") !== 0)
+                    continue;
+            }
         }
 
         encontrados++;
 
-        var link =
-            "https://archive.org/download/ps3_jogos/" +
-            file.name;
+        var link = file.download_url ||
+            "https://archive.org/download/ps3_jogos/" + encodePathSegments(file.name);
 
         var a = document.createElement("a");
 
         a.className = "card";
         a.href = link;
+        a.target = "_blank";
 
         a.innerHTML =
             "<div class='row'>" +

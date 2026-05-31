@@ -1,4 +1,9 @@
-[
-  "https://archive.org/metadata/ps3_jogos",
-  "https://outro-servidor/metadata/..."
+﻿[
+  {
+    "url": "https://archive.org/metadata/ps3_jogos"
+  },
+  {
+    "url": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare",
+    "rootPlatform": "PS2"
+  }
 ]
