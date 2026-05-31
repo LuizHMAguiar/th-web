@@ -34,15 +34,43 @@ function fetchJson(url) {
 }
 
 function normalizeServer(item) {
+  const base = {
+    url: null,
+    name: null,
+    platforms: {
+      PS1: false,
+      PS2: false,
+      PS3: false
+    }
+  };
+
   if (typeof item === "string") {
-    return { url: item };
+    base.url = item;
+    base.name = item;
+    return base;
   }
 
   if (item && typeof item.url === "string") {
-    return item;
+    base.url = item.url;
+    base.name = typeof item.name === "string" ? item.name : item.url;
+
+    if (typeof item.rootPlatform === "string") {
+      const root = item.rootPlatform.toUpperCase();
+      if (root === "PS1" || root === "PS2" || root === "PS3") {
+        base.platforms[root] = true;
+      }
+    }
+
+    ["PS1", "PS2", "PS3"].forEach(key => {
+      if (typeof item[key] === "boolean") {
+        base.platforms[key] = item[key];
+      }
+    });
+
+    return base;
   }
 
-  throw new Error("Formato inválido em servidores.json. Use [\"url\"] ou [{ url, name, downloadBase, rootPlatform }].");
+  throw new Error("Formato inválido em servidores.json. Use [\"url\"] ou [{ url, name, PS1, PS2, PS3 }].");
 }
 
 function loadServers() {
@@ -58,26 +86,56 @@ function loadServers() {
 
   const data = JSON.parse(raw);
   if (!Array.isArray(data)) {
-    throw new Error(`${path} deve ser um array de URLs ou objetos { url, name, downloadBase, rootPlatform }`);
+    throw new Error(`${path} deve ser um array de URLs ou objetos { url, name, PS1, PS2, PS3 }`);
   }
 
   return data.map(normalizeServer);
 }
 
-function inferPlatform(server, file) {
-  if (server.rootPlatform) {
-    return server.rootPlatform.toUpperCase();
+function detectPlatformByName(name) {
+  if (!name) return null;
+  const normalized = name.toUpperCase();
+
+  if (normalized.includes("PS1/") || normalized.includes("PSX/") || normalized.includes(" PS1") || normalized.includes(" PSX")) {
+    return "PS1";
   }
 
-  if (!file || !file.name) {
-    return null;
+  if (normalized.includes("PS2/") || normalized.includes(" PS2")) {
+    return "PS2";
   }
 
-  const name = file.name.toUpperCase();
-  if (name.startsWith("PS1/")) return "PS1";
-  if (name.startsWith("PS2/")) return "PS2";
-  if (name.startsWith("PS3/")) return "PS3";
+  if (normalized.includes("PS3/")) {
+    return "PS3";
+  }
+
   return null;
+}
+
+function countPlatforms(server) {
+  return ["PS1", "PS2", "PS3"].reduce((count, key) => count + (server.platforms[key] ? 1 : 0), 0);
+}
+
+function inferPlatform(server, file) {
+  const configuredCount = countPlatforms(server);
+  if (configuredCount === 1) {
+    return ["PS1", "PS2", "PS3"].find(key => server.platforms[key]);
+  }
+
+  const namePlatform = detectPlatformByName(file && file.name);
+  if (namePlatform) {
+    return namePlatform;
+  }
+
+  if (configuredCount > 1) {
+    return "PS3";
+  }
+
+  const url = server.url.toLowerCase();
+  if (url.includes("ps1") || url.includes("psx")) return "PS1";
+  if (url.includes("ps2")) return "PS2";
+  if (url.includes("ps3")) return "PS3";
+
+  return "PS3";
 }
 
 function archiveDownloadBaseFromMetadataUrl(url) {

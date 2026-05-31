@@ -1,13 +1,20 @@
 ﻿[
   {
-    "url": "https://archive.org/metadata/ps3_jogos"
+    "url": "https://archive.org/metadata/ps3_jogos",
+    "PS1": true,
+    "PS2": true,
+    "PS3": true
   },
   {
     "url": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare",
-    "rootPlatform": "PS2"
+    "PS1": false,
+    "PS2": true,
+    "PS3": false
   },
   {
     "url": "https://archive.org/metadata/ps3-pkg-games",
-    "rootPlatform": "PS3"
+    "PS1": false,
+    "PS2": false,
+    "PS3": true
   }
 ]
