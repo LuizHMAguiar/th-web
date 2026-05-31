@@ -42,6 +42,19 @@
     "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
   },
   {
+    "name": "Anime Hero I [PS2 Classics] [SLUS77447].pkg",
+    "source": "original",
+    "mtime": "1780243939",
+    "size": "3974946256",
+    "md5": "b769cf357365402ccfc3e1ddff95dcfb",
+    "crc32": "70b7bff7",
+    "sha1": "fb373e7bf9f5af236b057b15165fbc3b3f4e1eee",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/Anime%20Hero%20I%20%5BPS2%20Classics%5D%20%5BSLUS77447%5D.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos"
+  },
+  {
     "name": "USA/Ar nosurge - Ode to an Unborn Star [NPUB31579].pkg",
     "source": "original",
     "mtime": "1658550353",
