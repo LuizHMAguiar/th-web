@@ -55,7 +55,7 @@
     "server": "https://archive.org/metadata/ps3_jogos"
   },
   {
-    "name": "Anime Hero II [PS2 Classics] [SLUS00000].pkg",
+    "name": "PS2/Anime Hero II [PS2 Classics] [SLUS00000].pkg",
     "source": "original",
     "mtime": "1780282211",
     "size": "4245816464",
@@ -63,12 +63,12 @@
     "crc32": "0d4e1dd5",
     "sha1": "2d306b16ba88c208e4d98beac379869caf197de0",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Anime%20Hero%20II%20%5BPS2%20Classics%5D%20%5BSLUS00000%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20II%20%5BPS2%20Classics%5D%20%5BSLUS00000%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos"
   },
   {
-    "name": "Anime Hero III [PS2 Classics] [SLUS22222].pkg",
+    "name": "PS2/Anime Hero III [PS2 Classics] [SLUS22222].pkg",
     "source": "original",
     "mtime": "1780282905",
     "size": "4245956512",
@@ -76,12 +76,12 @@
     "crc32": "6e2ae0e0",
     "sha1": "42b275af2ed3b8d877048a24a6694313f0d58b12",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Anime%20Hero%20III%20%5BPS2%20Classics%5D%20%5BSLUS22222%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20III%20%5BPS2%20Classics%5D%20%5BSLUS22222%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos"
   },
   {
-    "name": "Anime Hero IV [PS2 Classics] [SLUS21672].pkg",
+    "name": "PS2/Anime Hero IV [PS2 Classics] [SLUS21672].pkg",
     "source": "original",
     "mtime": "1780282768",
     "size": "4243043712",
@@ -89,12 +89,12 @@
     "crc32": "8542b43f",
     "sha1": "a9e5b3e7a25607f0cddc8ebb9d189802527fb223",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Anime%20Hero%20IV%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20IV%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos"
   },
   {
-    "name": "Anime Hero V [PS2 Classics] [SLUS21672].pkg",
+    "name": "PS2/Anime Hero V [PS2 Classics] [SLUS21672].pkg",
     "source": "original",
     "mtime": "1780282540",
     "size": "4223304384",
@@ -102,8 +102,8 @@
     "crc32": "f7e84282",
     "sha1": "74e302da84ce4bae20f9bd9d4c61476186b0f531",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Anime%20Hero%20V%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20V%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos"
   },
   {
