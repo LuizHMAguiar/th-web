@@ -299,8 +299,48 @@ async function gerar() {
 
   console.log(`Processo de capas finalizado. Capas encontradas: ${countCapas}/${unicos.length}`);
 
-  fs.writeFileSync("jogos.json", JSON.stringify(unicos, null, 2));
-  console.log("jogos.json atualizado com as capas.");
+  // Tentar ler jogos fixos e mesclar sem duplicatas
+  const fixedPath = 'jogos_fixos.json';
+  let fixedItems = [];
+  if (fs.existsSync(fixedPath)) {
+    try {
+      const raw = fs.readFileSync(fixedPath, 'utf8').trim();
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) fixedItems = parsed;
+        else console.warn(`${fixedPath} não é um array — ignorando`);
+      }
+    } catch (err) {
+      console.warn(`Falha ao ler ${fixedPath}: ${err.message}`);
+    }
+  }
+
+  function normalizeFixed(item) {
+    if (!item) return null;
+    var name = (typeof item.name === 'string' && item.name) || (typeof item === 'string' && item) || (item.url || null);
+    var download_url = item.download_url || item.url || name || null;
+    var platform = item.platform || detectPlatformByName(name) || 'PS3';
+    return {
+      name: name,
+      download_url: download_url,
+      platform: platform,
+      size: item.size || 0,
+      cover: item.cover || null,
+      server: item.server || 'fixos'
+    };
+  }
+
+  const normalizedFixed = fixedItems.map(normalizeFixed).filter(Boolean);
+
+  // Coloca os gerados primeiro (preservando capas obtidas), depois adiciona fixos não duplicados
+  const combined = uniqueByUrl(unicos.concat(normalizedFixed));
+
+  combined.sort((a, b) => {
+    return stripPrefix(a.name || '').toLowerCase().localeCompare(stripPrefix(b.name || '').toLowerCase());
+  });
+
+  fs.writeFileSync('jogos.json', JSON.stringify(combined, null, 2));
+  console.log('jogos.json atualizado com as capas e jogos_fixos.json mesclado.');
 }
 
 gerar().catch(err => {
