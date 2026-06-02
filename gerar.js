@@ -299,7 +299,14 @@ async function gerar() {
 
   console.log(`Processo de capas finalizado. Capas encontradas: ${countCapas}/${unicos.length}`);
 
-  // Tentar ler jogos fixos e mesclar sem duplicatas
+  // Limpa o arquivo jogos.json antes de iniciar para evitar entradas desatualizadas
+  try {
+    fs.writeFileSync('jogos.json', JSON.stringify([], null, 2));
+  } catch (err) {
+    console.warn('Não foi possível limpar jogos.json antes de gerar:', err.message);
+  }
+
+  // Ler jogos_fixos.json apenas para enriquecer registros existentes (não adicionar novos)
   const fixedPath = 'jogos_fixos.json';
   let fixedItems = [];
   if (fs.existsSync(fixedPath)) {
@@ -308,39 +315,48 @@ async function gerar() {
       if (raw) {
         const parsed = JSON.parse(raw);
         if (Array.isArray(parsed)) fixedItems = parsed;
-        else console.warn(`${fixedPath} não é um array — ignorando`);
+        else console.warn(fixedPath + ' não é um array — ignorando');
       }
     } catch (err) {
-      console.warn(`Falha ao ler ${fixedPath}: ${err.message}`);
+      console.warn('Falha ao ler ' + fixedPath + ': ' + err.message);
     }
   }
 
-  function normalizeFixed(item) {
-    if (!item) return null;
-    var name = (typeof item.name === 'string' && item.name) || (typeof item === 'string' && item) || (item.url || null);
-    var download_url = item.download_url || item.url || name || null;
-    var platform = item.platform || detectPlatformByName(name) || 'PS3';
-    return {
-      name: name,
-      download_url: download_url,
-      platform: platform,
-      size: item.size || 0,
-      cover: item.cover || null,
-      server: item.server || 'fixos'
-    };
-  }
-
-  const normalizedFixed = fixedItems.map(normalizeFixed).filter(Boolean);
-
-  // Coloca os gerados primeiro (preservando capas obtidas), depois adiciona fixos não duplicados
-  const combined = uniqueByUrl(unicos.concat(normalizedFixed));
-
-  combined.sort((a, b) => {
-    return stripPrefix(a.name || '').toLowerCase().localeCompare(stripPrefix(b.name || '').toLowerCase());
+  // Criar um mapa por download_url e por nome para consulta rápida
+  const fixedByUrl = Object.create(null);
+  const fixedByName = Object.create(null);
+  fixedItems.forEach(item => {
+    if (!item) return;
+    const url = item.download_url || item.url || null;
+    const name = (typeof item.name === 'string' && item.name) || (typeof item === 'string' && item) || null;
+    if (url) fixedByUrl[url] = item;
+    if (name) fixedByName[name] = item;
   });
 
-  fs.writeFileSync('jogos.json', JSON.stringify(combined, null, 2));
-  console.log('jogos.json atualizado com as capas e jogos_fixos.json mesclado.');
+  // Enriquecer apenas os jogos obtidos dos servidores
+  const enriched = unicos.map(j => {
+    const url = j.download_url || null;
+    const name = j.name || null;
+    const fixed = (url && fixedByUrl[url]) || (name && fixedByName[name]);
+    if (!fixed) return j;
+    // Copiar campos úteis de fixed para o item gerado somente se estiverem faltando
+    return Object.assign({}, j, {
+      cover: j.cover || fixed.cover || null,
+      size: j.size || fixed.size || j.size,
+      server: j.server || fixed.server || j.server
+    });
+  });
+
+  enriched.sort(function (a, b) {
+    var A = stripPrefix(a.name || '').toLowerCase();
+    var B = stripPrefix(b.name || '').toLowerCase();
+    if (A < B) return -1;
+    if (A > B) return 1;
+    return 0;
+  });
+
+  fs.writeFileSync('jogos.json', JSON.stringify(enriched, null, 2));
+  console.log('jogos.json atualizado com os arquivos atualmente disponíveis nos servidores.');
 }
 
 gerar().catch(err => {
