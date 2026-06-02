@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TH Store</title>
 
     <style>
@@ -157,108 +158,111 @@
 </button>-->
 
 <script>
-
 var container = document.getElementById('lista-loja');
 var loadingDiv = document.getElementById('loading');
 
 var todosArquivos = [];
 var filtroAtual = "TODOS";
 
-function atualizarPagina() {
+// Compat helpers para navegadores antigos (sem classList, map, localeCompare options)
+function hasClass(el, cls) {
+    if (!el) return false;
+    if (el.classList && el.classList.contains) return el.classList.contains(cls);
+    return ((' ' + el.className + ' ').indexOf(' ' + cls + ' ') > -1);
+}
 
+function addClass(el, cls) {
+    if (!el) return;
+    if (el.classList && el.classList.add) return el.classList.add(cls);
+    if (!hasClass(el, cls)) el.className = (el.className ? el.className + ' ' : '') + cls;
+}
+
+function removeClass(el, cls) {
+    if (!el) return;
+    if (el.classList && el.classList.remove) return el.classList.remove(cls);
+    el.className = (' ' + el.className + ' ').replace(new RegExp(' ' + cls + ' ', 'g'), ' ').replace(/^\s+|\s+$/g, '');
+}
+
+function atualizarPagina() {
     loadingDiv.style.display = "block";
     loadingDiv.innerHTML = "Atualizando lista...";
-
     carregar();
 }
 
 function formatBytes(bytes) {
-
-    bytes = parseInt(bytes || 0);
-
+    bytes = parseInt(bytes || 0, 10);
     if (!bytes) return "Desconhecido";
-
     var sizes = ["Bytes", "KB", "MB", "GB"];
     var i = 0;
-
     while (bytes >= 1024 && i < sizes.length - 1) {
         bytes = bytes / 1024;
         i++;
     }
-
     return Math.round(bytes * 100) / 100 + " " + sizes[i];
 }
 
 function filtrar(tipo, botao) {
-
     filtroAtual = tipo;
-
     var botoes = document.getElementsByClassName("btn-filtro");
-
-    for (var i = 0; i < botoes.length; i++) {
-        botoes[i].classList.remove("active");
+    for (var j = 0; j < botoes.length; j++) {
+        removeClass(botoes[j], 'active');
     }
-
-    botao.classList.add("active");
-
+    addClass(botao, 'active');
     renderizar();
 }
 
 function encodePathSegments(path) {
-    return path.split("/").map(encodeURIComponent).join("/");
+    var parts = path.split('/');
+    for (var i = 0; i < parts.length; i++) {
+        parts[i] = encodeURIComponent(parts[i]);
+    }
+    return parts.join('/');
 }
 
 function displayName(name) {
     if (!name) return name;
-    var index = name.indexOf("/");
+    var index = name.indexOf('/');
     return index === -1 ? name : name.slice(index + 1);
 }
 
 function sortFiles(files) {
     files.sort(function (a, b) {
-        return displayName(a.name).localeCompare(displayName(b.name), undefined, { sensitivity: 'base' });
+        var A = (displayName(a.name) || '').toLowerCase();
+        var B = (displayName(b.name) || '').toLowerCase();
+        if (A < B) return -1;
+        if (A > B) return 1;
+        return 0;
     });
 }
 
 function renderizar() {
-
     container.innerHTML = "";
-
     var encontrados = 0;
-
     for (var i = 0; i < todosArquivos.length; i++) {
-
         var file = todosArquivos[i];
-
         if (!file.name) continue;
+        if (file.name.toLowerCase().indexOf('.pkg') === -1) continue;
 
-        if (file.name.toLowerCase().indexOf(".pkg") === -1)
-            continue;
-
-        if (filtroAtual !== "TODOS") {
+        if (filtroAtual !== 'TODOS') {
             if (file.platform) {
-                if (file.platform.toUpperCase() !== filtroAtual)
-                    continue;
+                if (file.platform.toUpperCase() !== filtroAtual) continue;
             } else {
-                if (file.name.indexOf(filtroAtual + "/") !== 0)
-                    continue;
+                if (file.name.indexOf(filtroAtual + '/') !== 0) continue;
             }
         }
 
         encontrados++;
 
-        var link = file.download_url ||
-            "https://archive.org/download/ps3_jogos/" + encodePathSegments(file.name);
+        var link = file.download_url || 'https://archive.org/download/ps3_jogos/' + encodePathSegments(file.name);
 
-        var badgeClass = file.platform ? file.platform.toLowerCase() : "unknown";
-        var badgeText = file.platform ? file.platform : "UNK";
+        var badgeClass = file.platform ? file.platform.toLowerCase() : 'unknown';
+        var badgeText = file.platform ? file.platform : 'UNK';
         var badge = "<span class='label-platform label-" + badgeClass + "'>" + badgeText + "</span>";
 
-        var a = document.createElement("a");
-
-        a.className = "card";
+        var a = document.createElement('a');
+        a.className = 'card';
         a.href = link;
-        a.target = "_blank";
+        a.target = '_blank';
 
         a.innerHTML =
             "<div class='row'>" +
@@ -270,44 +274,30 @@ function renderizar() {
     }
 
     if (encontrados === 0) {
-
-        container.innerHTML =
-            "<div class='empty-message'>" +
-            "Nenhum arquivo encontrado" +
-            "</div>";
+        container.innerHTML = "<div class='empty-message'>Nenhum arquivo encontrado</div>";
     }
 }
 
 function carregar() {
-
     loadingDiv.innerHTML = "Carregando...";
-
     var xhr = new XMLHttpRequest();
-
-    xhr.open("GET", "./jogos.json", true);
-
+    xhr.open('GET', './jogos.json', true);
     xhr.onreadystatechange = function () {
-
         if (xhr.readyState !== 4) return;
-
         if (xhr.status !== 200) {
-            container.innerHTML = "Erro HTTP: " + xhr.status;
+            container.innerHTML = 'Erro HTTP: ' + xhr.status;
             return;
         }
-
         try {
             todosArquivos = JSON.parse(xhr.responseText);
         } catch (e) {
-            container.innerHTML = "Erro JSON";
+            container.innerHTML = 'Erro JSON';
             return;
         }
-
         sortFiles(todosArquivos);
-        loadingDiv.style.display = "none";
-
+        loadingDiv.style.display = 'none';
         renderizar();
     };
-
     xhr.send();
 }
 
