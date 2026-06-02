@@ -11,35 +11,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/1942%20Joint%20Strike%20%5BNPUB30024%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Alone-In-The_Dark-The-New-Nightmare.pkg",
-    "source": "original",
-    "mtime": "1609788653",
-    "size": "4502802400",
-    "md5": "392cfdc71bdab5df23b2762945ad814b",
-    "crc32": "27eb6d5b",
-    "sha1": "e12a50f1207248399259581b0b50484d1d078ddf",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Alone-In-The_Dark-The-New-Nightmare.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Altered_Beast_PS2_Classics_SLES53024.pkg",
-    "source": "original",
-    "mtime": "1609788933",
-    "size": "2153304208",
-    "md5": "9cfd6ab2bc61fa531dba930aaa0f0f4d",
-    "crc32": "2974d41d",
-    "sha1": "dc5f7808449c672dd5ce3659ec1860622ee702be",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Altered_Beast_PS2_Classics_SLES53024.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "PS2/Anime Hero I [PS2 Classics] [SLUS77447].pkg",
@@ -52,7 +25,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20I%20%5BPS2%20Classics%5D%20%5BSLUS77447%5D.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "PS2/Anime Hero II [PS2 Classics] [SLUS00000].pkg",
@@ -65,7 +39,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20II%20%5BPS2%20Classics%5D%20%5BSLUS00000%5D.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "PS2/Anime Hero III [PS2 Classics] [SLUS22222].pkg",
@@ -78,7 +53,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20III%20%5BPS2%20Classics%5D%20%5BSLUS22222%5D.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "PS2/Anime Hero IV [PS2 Classics] [SLUS21672].pkg",
@@ -91,7 +67,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20IV%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "PS2/Anime Hero V [PS2 Classics] [SLUS21672].pkg",
@@ -104,7 +81,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Anime%20Hero%20V%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "USA/Ar nosurge - Ode to an Unborn Star [NPUB31579].pkg",
@@ -118,105 +96,32 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Ar%20nosurge%20-%20Ode%20to%20an%20Unborn%20Star%20%5BNPUB31579%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
-    "name": "BDFL_Manager_2004_SLES51084.pkg",
-    "source": "original",
-    "mtime": "1609791085",
-    "size": "2458617776",
-    "md5": "3371d14be8f728a1e9ae4bbad7b31bf7",
-    "crc32": "c3320c33",
-    "sha1": "5df6c71fb9af32f30ecc1ae2313ee28776bd4922",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/BDFL_Manager_2004_SLES51084.pkg",
+    "name": "Burnout (PS2).pkg",
+    "download_url": "https://download1501.mediafire.com/skvnmtma4efgOkbSaVvhuJXMUO_QNd-xhiz6paxgS2yOQtgMMopRfk3IYKY46EhgDnwRxR_DqDEtluTTOZczEHYibHi3jcNlttz4yeG44W8QObhJHM9f-_yLKW6tRoFXSYTdWm2M9s_9NeBJ1ilfh3sbn3qf5Ex_gCDeHZSfGlMhTlY/npkmjh0aqhv9lm2/Burnout+by+Easy.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "size": 0,
+    "cover": null,
+    "server": "fixos"
   },
   {
-    "name": "Campeones_Oliver_y_Benji_PS2Classics_SLPS25691.pkg",
-    "source": "original",
-    "mtime": "1609791156",
-    "size": "1250747296",
-    "md5": "6983ebf226191267547b1442d1016d25",
-    "crc32": "526b6b5c",
-    "sha1": "e08ea2736d62efbccd9457c68198423788176933",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Campeones_Oliver_y_Benji_PS2Classics_SLPS25691.pkg",
+    "name": "Burnout 2: Point of Impact (PS2).pkg",
+    "download_url": "https://download1591.mediafire.com/4dnmepz7cfjg-WKbD1GQaQCAdVbrivmvMMymE-gLuqfFi3yGLa_vBIhvyRTBlU18Vw7CnDgM3sfJptuyFVoFipd7iFIhbYCGLXDYGh3FeqboEvLSfKvHBVfnEX6EBqMFxKpfZR_6as-CVIEDFMhPzYxxuNkkVbKw5ydK5s8CQ3iQIaY/rm4f44pyxal1glk/Burnout+2+Point+of+Impact+By+Easy.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "size": 0,
+    "cover": null,
+    "server": "fixos"
   },
   {
-    "name": "Club_Football_Real_Madri_2005_SLES52654.pkg",
-    "source": "original",
-    "mtime": "1609791280",
-    "size": "3242375424",
-    "md5": "06cf9c7a79d5e3cb87b7d7bbcaab1db0",
-    "crc32": "3dee1a53",
-    "sha1": "1d4740303dbd439345ef6c3fb767140d7bd089a9",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Club_Football_Real_Madri_2005_SLES52654.pkg",
+    "name": "Burnout 3: Takedown (PS2).pkg",
+    "download_url": "https://download2295.mediafire.com/etnr33pjq1tgHNcYppJ36Oj8diIAds7zdM_TbzsbcR0FH3_xHuHaCkzmnRFfVBH3xZE6QxuqltRh5eGFey1_Ob6pd3s_s-AwmUwHF5u8Aevjc7xz3aSUSd8TzV0cnmfyIUKeGuzYYl9396HgoSx8OWSe17ncMPGj8K1N3ECGiN9uxcM/grpcy32rzg8rjeh/Burnout+3+Takedown+by+Easy.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Club_Football_Real_Madrid_SLES51077.pkg",
-    "source": "original",
-    "mtime": "1609798600",
-    "size": "3113117600",
-    "md5": "500c5bb9f3873f9888109ef2b86261b8",
-    "crc32": "f02c43d3",
-    "sha1": "cb383db1981f0c705e4f3403b4498ec0bded2ee0",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Club_Football_Real_Madrid_SLES51077.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "CSI_3_Dimensions_of_Murder_SLUS21655.pkg",
-    "source": "original",
-    "mtime": "1609798949",
-    "size": "3320172368",
-    "md5": "1ec28fcdd7cfc716768699f9422f108d",
-    "crc32": "bd396d3a",
-    "sha1": "b7ae2ed0a17fe65fe1c5ac4f9239c82eeb1d4f0d",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/CSI_3_Dimensions_of_Murder_SLUS21655.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "DBZ_Budokai_Tenkaichi_4_Beta_8_SLUS41678.pkg",
-    "source": "original",
-    "mtime": "1609873629",
-    "size": "4173919232",
-    "md5": "39b075bc6470096702de2d669291dab5",
-    "crc32": "621775b5",
-    "sha1": "6328ce1ab2e647a4a85752d2262ca5c47422808e",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/DBZ_Budokai_Tenkaichi_4_Beta_8_SLUS41678.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "DBZ_Budokai_Tenkaichi_4.pkg",
-    "source": "original",
-    "mtime": "1609872952",
-    "size": "4329964400",
-    "md5": "c937311defe9c2133704d9d48f490cf5",
-    "crc32": "722d0174",
-    "sha1": "c0333b7cf00a1e149484b93d7ce7930c4fb3a20f",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/DBZ_Budokai_Tenkaichi_4.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "size": 0,
+    "cover": null,
+    "server": "fixos"
   },
   {
     "name": "USA/Dead Nation.pkg",
@@ -230,7 +135,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Dead%20Nation.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Deception IV The Nightmare Princess [NPUB31752].pkg",
@@ -244,21 +150,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Deception%20IV%20The%20Nightmare%20Princess%20%5BNPUB31752%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Def_Jam_Fight_for_NY_SLUS21004.pkg",
-    "source": "original",
-    "mtime": "1609873936",
-    "size": "4721450064",
-    "md5": "8c998ee0109d9f3ac2e2082793e8527a",
-    "crc32": "1984ab40",
-    "sha1": "8e8b56150432a8632f0315df97edcd603afa265a",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Def_Jam_Fight_for_NY_SLUS21004.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "JP/DENGEKI BUNKO FIGHTING CLIMAX - IGNITION [NPJB00785].pkg",
@@ -272,7 +165,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/JP/DENGEKI%20BUNKO%20FIGHTING%20CLIMAX%20-%20IGNITION%20%5BNPJB00785%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "PS2/Digimon World 4 (PS2) [PS2 Classics] [SLUS20836].pkg",
@@ -285,21 +179,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Digimon%20World%204%20(PS2)%20%5BPS2%20Classics%5D%20%5BSLUS20836%5D.pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
-  },
-  {
-    "name": "Disneys_The_Haunted_Mansion_PS2_Classics_SLUS20681.pkg",
-    "source": "original",
-    "mtime": "1609874068",
-    "size": "1851773808",
-    "md5": "817eb896d2fd48f32e5ecfca248cf991",
-    "crc32": "a5124549",
-    "sha1": "9537fbdf7e2b88a2e57470e86c3f6ee0e86e407e",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Disneys_The_Haunted_Mansion_PS2_Classics_SLUS20681.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "Europe/Dragon Ball Z Battle of Z [NPEB01823].pkg",
@@ -313,203 +194,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Dragon%20Ball%20Z%20Battle%20of%20Z%20%5BNPEB01823%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Dragon_Quest_Journey_of_the_Cursed_King_SLES53974.pkg",
-    "source": "original",
-    "mtime": "1609935114",
-    "size": "4093385440",
-    "md5": "ebf0a3aa6dbaf780a146c91badab9619",
-    "crc32": "d9afe5f9",
-    "sha1": "b46198971ae229553418c56858b06998f4ad6d8f",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Dragon_Quest_Journey_of_the_Cursed_King_SLES53974.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "El_Padrino.pkg",
-    "source": "original",
-    "mtime": "1609935629",
-    "size": "3932386368",
-    "md5": "fb905d7b1099debb5d6694f75e67c3c7",
-    "crc32": "3b76740b",
-    "sha1": "2ff61010585bdc09b14ec2789bab01f99fba96ed",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/El_Padrino.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Enter_the_Matrix_PS2_Classics_SLES51203.pkg",
-    "source": "original",
-    "mtime": "1609937579",
-    "size": "3823597632",
-    "md5": "df6ee07ae9ec31bb63fdfe3ac76e9ea5",
-    "crc32": "e47f9375",
-    "sha1": "2d34dbf93bb6f2f82ea261c02e3e8a836276e7ae",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Enter_the_Matrix_PS2_Classics_SLES51203.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "EP0000-SLES52023_00-PS2MANHUNT00000.pkg",
-    "source": "original",
-    "mtime": "1610566133",
-    "size": "4728340368",
-    "md5": "e822220e8c03c4e8e12b801722ff8725",
-    "crc32": "13216b17",
-    "sha1": "168923aab0f61862ff5a560f42c93b011096c117",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/EP0000-SLES52023_00-PS2MANHUNT00000.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "EP0000-SLES54819_00-PS2MANHUNT200000.pkg",
-    "source": "original",
-    "mtime": "1610566389",
-    "size": "2684664624",
-    "md5": "30fe60a8980a8fe16516f32f3ce86c43",
-    "crc32": "cda6147a",
-    "sha1": "ace707c8383c6a98e30db2357c407cca4a598df6",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/EP0000-SLES54819_00-PS2MANHUNT200000.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Fahrenheit_PS2Classics_SLES53540.pkg",
-    "source": "original",
-    "mtime": "1609937852",
-    "size": "3484941312",
-    "md5": "ff05b51f5f14d85f48bb762fa79dd005",
-    "crc32": "528bea7c",
-    "sha1": "6f1122f9b2a865a452813cc9d82990be4a984b62",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Fahrenheit_PS2Classics_SLES53540.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "FIFA_Street_2.pkg",
-    "source": "original",
-    "mtime": "1609957648",
-    "size": "4732395232",
-    "md5": "fb084dfc9cfe4c86303548408d512200",
-    "crc32": "772b14ad",
-    "sha1": "293ebd2ad8750d0407cdb38f366812c5ebeaffac",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/FIFA_Street_2.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Fifa_Street_SLUS21147.pkg",
-    "source": "original",
-    "mtime": "1609970472",
-    "size": "4727913616",
-    "md5": "38808996de01d4e95de2b9642f60fa30",
-    "crc32": "d56ddf9c",
-    "sha1": "55530631856a2ec612992245f0f8bfca2c30b8ce",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Fifa_Street_SLUS21147.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Flintstones_The_Bedrock_Racing_PS2Classics_SLES54473.pkg",
-    "source": "original",
-    "mtime": "1609970772",
-    "size": "120443808",
-    "md5": "c8d723e417e5306a506c363238625e65",
-    "crc32": "ab6193f7",
-    "sha1": "e59851030ada3595a0bee7c2b8e7fc7940869533",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Flintstones_The_Bedrock_Racing_PS2Classics_SLES54473.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Flintstones_Viva_Rock_Vegas_PS2Classics_SLES50259.pkg",
-    "source": "original",
-    "mtime": "1609972777",
-    "size": "604839440",
-    "md5": "4d8eaee8cccb782490d7457a9234c27a",
-    "crc32": "c17a9857",
-    "sha1": "c53998d12063450bc2df33cd343fa86436970225",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Flintstones_Viva_Rock_Vegas_PS2Classics_SLES50259.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Fussball_Manager_2005_PS2_Classics_SLES52674.pkg",
-    "source": "original",
-    "mtime": "1610017620",
-    "size": "2998174320",
-    "md5": "2f14aeed6526b37d46391f253683e08d",
-    "crc32": "82e50783",
-    "sha1": "deeb4dcca3a146887fc33f2e165810333a41b4c0",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Fussball_Manager_2005_PS2_Classics_SLES52674.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Gadget_and_the_Gadgetinis_PS2Classics_SLES52845.pkg",
-    "source": "original",
-    "mtime": "1610017701",
-    "size": "327441968",
-    "md5": "47cc141208c9b068353fce4ca4c770e7",
-    "crc32": "23f1cc76",
-    "sha1": "e828633955a1a72f5d53adcd152ce9cb53ea9f8c",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Gadget_and_the_Gadgetinis_PS2Classics_SLES52845.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Gallop_Racer_2_PS2_Classics_SLES53011.pkg",
-    "source": "original",
-    "mtime": "1610017878",
-    "size": "3318922416",
-    "md5": "b3bbc2426049e7f091dd354ef7e949c0",
-    "crc32": "5951feae",
-    "sha1": "abe734d8ea154686fa9fe9bdd1eead611258a87d",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Gallop_Racer_2_PS2_Classics_SLES53011.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Getaway_The-Black_Monday_PS2_SCUS97408.pkg",
-    "source": "original",
-    "mtime": "1610018141",
-    "size": "4227717888",
-    "md5": "dc99b81736408b117824f9f06d6d820b",
-    "crc32": "3e9bc830",
-    "sha1": "2c713dc0a7db3260d8879e5b9817bc650cbee31d",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Getaway_The-Black_Monday_PS2_SCUS97408.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Gran Turismo HD Concept v1.2 [NPUA80019].pkg",
@@ -523,35 +209,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Gran%20Turismo%20HD%20Concept%20v1.2%20%5BNPUA80019%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Grand_Theft_Auto_3.pkg",
-    "source": "original",
-    "mtime": "1610023581",
-    "size": "4727539216",
-    "md5": "8c87d9c49c6deb0416bc66a68e83df2e",
-    "crc32": "c110c79e",
-    "sha1": "0f12556f83025afe5e85c111db60041ded31c3ac",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Grand_Theft_Auto_3.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Grand_Theft_Auto_Liberty_City_Stories.pkg",
-    "source": "original",
-    "mtime": "1610024389",
-    "size": "4040013600",
-    "md5": "a59d6d5a9baeec6fbec538cb3c5af355",
-    "crc32": "f9f833c0",
-    "sha1": "fd04e45fb1fdd02f1a2224693b2cc2fe830850f2",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Grand_Theft_Auto_Liberty_City_Stories.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "PS2/Guitar Hero (PS2).pkg",
@@ -564,7 +223,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Guitar%20Hero%20(PS2).pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "USA/Hard Corps Uprising Trial [NPUB30096].pkg",
@@ -578,49 +238,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Hard%20Corps%20Uprising%20Trial%20%5BNPUB30096%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Harry_Potter_and_the_Philosophers_Stone_SLES52055.pkg",
-    "source": "original",
-    "mtime": "1610024700",
-    "size": "4232055168",
-    "md5": "a256ca336de579c2a3ec9caa1fada7aa",
-    "crc32": "da4835c6",
-    "sha1": "5014c769d545388596c50a095af871256be4e8ef",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Harry_Potter_and_the_Philosophers_Stone_SLES52055.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Harry_Potter_and_the_Prisoner_of_Azkaban_SLES52440.pkg",
-    "source": "original",
-    "mtime": "1610030686",
-    "size": "3553788032",
-    "md5": "57913338e36c21e5c5e7963d70b699b9",
-    "crc32": "bad1e508",
-    "sha1": "b82784cf2cb28e67ff02aff93e40e9b66688c33c",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Harry_Potter_and_the_Prisoner_of_Azkaban_SLES52440.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Harry_Potter_y_la_Camara_Secreta.pkg",
-    "source": "original",
-    "mtime": "1610037522",
-    "size": "1810421664",
-    "md5": "951d2d16e9c299e9277f275831a8d76f",
-    "crc32": "dfe9a655",
-    "sha1": "ccc73d4c36f75690201a4c469fce86511e82cb75",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Harry_Potter_y_la_Camara_Secreta.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "Europe/Hatsune Miku Project Diva F [NPEB01393].pkg",
@@ -634,7 +253,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Hatsune%20Miku%20Project%20Diva%20F%20%5BNPEB01393%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "Europe/Hatsune Miku Project Diva F 2nd [NPEB02013].pkg",
@@ -648,7 +268,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Hatsune%20Miku%20Project%20Diva%20F%202nd%20%5BNPEB02013%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Hot Shots Golf - Out of Bounds Complete Collection [NPUA80765].pkg",
@@ -662,7 +283,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Hot%20Shots%20Golf%20-%20Out%20of%20Bounds%20Complete%20Collection%20%5BNPUA80765%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Hot Shots Golf - World Invitational [NPUA80864].pkg",
@@ -676,7 +298,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Hot%20Shots%20Golf%20-%20World%20Invitational%20%5BNPUA80864%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/inFAMOUS Festival of Blood [NPUA80657].pkg",
@@ -690,7 +313,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/inFAMOUS%20Festival%20of%20Blood%20%5BNPUA80657%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "PS1/Jackie Chan Stuntmaster (Legendado em Portugues) By JymsNsl.pkg",
@@ -703,21 +327,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS1/Jackie%20Chan%20Stuntmaster%20(Legendado%20em%20Portugues)%20By%20JymsNsl.pkg",
     "platform": "PS1",
-    "server": "https://archive.org/metadata/ps3_jogos"
-  },
-  {
-    "name": "jackie_chan_stuntmaster_PS2Classics_SLUS00684.pkg",
-    "source": "original",
-    "mtime": "1610041202",
-    "size": "647724608",
-    "md5": "b7be4af2cecc2769f57da81f9da1871f",
-    "crc32": "33c76373",
-    "sha1": "4306f865b08e1a2cc97ae97891de8bdb228ee08d",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/jackie_chan_stuntmaster_PS2Classics_SLUS00684.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "USA/Killzone HD [NPUA80856].pkg",
@@ -731,63 +342,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Killzone%20HD%20%5BNPUA80856%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Leisure_Suit_Larry_Magna_Cum_Laude_SLES52644.pkg",
-    "source": "original",
-    "mtime": "1610047820",
-    "size": "2545795504",
-    "md5": "ab6a76f20feaa94cabfd974490abf47a",
-    "crc32": "b43982a7",
-    "sha1": "966c70a54040271dd0cddd7307825bfda33b4477",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Leisure_Suit_Larry_Magna_Cum_Laude_SLES52644.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Mafia-PS2-Classics-SLES52282.pkg",
-    "source": "original",
-    "mtime": "1610060073",
-    "size": "4086072608",
-    "md5": "02cd1eba3e22b384a1d73703700fb05c",
-    "crc32": "bc835fdb",
-    "sha1": "5393e99161457af422d4b7af57fd0fd4eb435ad4",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Mafia-PS2-Classics-SLES52282.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Masters_of_the_Universe_Defender_of_Greyskull_SLES53035_.pkg",
-    "source": "original",
-    "mtime": "1610145474",
-    "size": "738260640",
-    "md5": "d22396dcb60b8442eff16286b60dd92a",
-    "crc32": "e3c0184a",
-    "sha1": "9350fed2e0bb25743ad1f6db2dea6b9fd64381a7",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Masters_of_the_Universe_Defender_of_Greyskull_SLES53035_.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Matrix_The_Path_of_Neo_SLES53799.pkg",
-    "source": "original",
-    "mtime": "1610299716",
-    "size": "4716317360",
-    "md5": "0db175453744f76a0454cda2c30ee2b9",
-    "crc32": "0c52d274",
-    "sha1": "5ad48d4dbc0d2238784a7dd278362b1cd7f0cfe3",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Matrix_The_Path_of_Neo_SLES53799.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Medal of Honor Frontline [NPUB30288].pkg",
@@ -801,7 +357,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Medal%20of%20Honor%20Frontline%20%5BNPUB30288%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Metal Gear Solid 4 Guns of the Patriots [NPUB31633].pkg",
@@ -815,21 +372,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Metal%20Gear%20Solid%204%20Guns%20of%20the%20Patriots%20%5BNPUB31633%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Mortal_Kombat_-_Shaolin_Monks.pkg",
-    "source": "original",
-    "mtime": "1610301157",
-    "size": "3392756608",
-    "md5": "fdb1ed153a29025e825b3016074f0549",
-    "crc32": "87f7ac0c",
-    "sha1": "65802f605fe4f236c45198afe4170b3f3a2bde6f",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Mortal_Kombat_-_Shaolin_Monks.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "Europe/Motorstorm RC [NPEA00333].pkg",
@@ -843,91 +387,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Motorstorm%20RC%20%5BNPEA00333%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Need_for_Speed_Underground_2_SLES52725.pkg",
-    "source": "original",
-    "mtime": "1610302277",
-    "size": "4122697104",
-    "md5": "42838daaf1bd532ef0bf4163ddc8030e",
-    "crc32": "00f9557f",
-    "sha1": "533a3c1847d0c3aae81866f514e759238d67b22c",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Need_for_Speed_Underground_2_SLES52725.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Need_for_Speed_Underground_PS2Classics_SLES51967.pkg",
-    "source": "original",
-    "mtime": "1610303781",
-    "size": "2749035696",
-    "md5": "ca22a2935dbbbf5c26629f62885fad60",
-    "crc32": "552423a0",
-    "sha1": "4de63489a025c94467a10c5e3106171f8abed2c4",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Need_for_Speed_Underground_PS2Classics_SLES51967.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "NeoGeo_Fatal_Fury_Collection_PS2Classics_SLUS21537.pkg",
-    "source": "original",
-    "mtime": "1610307897",
-    "size": "2241812832",
-    "md5": "17ffadba5b51c3e6f4d140614875b3f7",
-    "crc32": "9fe1aa77",
-    "sha1": "a1b7fa7401bfba7c8c1446611d69bb0f662ea462",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/NeoGeo_Fatal_Fury_Collection_PS2Classics_SLUS21537.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Nickelodeon_SpongeBob_and_Friends_Attack_of_the_Toybots_PS2_Classics_SLES54991.pkg",
-    "source": "original",
-    "mtime": "1610308227",
-    "size": "2837996624",
-    "md5": "469fdf195deea5c3da565fa9508323f3",
-    "crc32": "d7709d88",
-    "sha1": "46b50c7bb2645e20d6c7c04be8c604b831fab014",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Nickelodeon_SpongeBob_and_Friends_Attack_of_the_Toybots_PS2_Classics_SLES54991.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Obscure_PS2_Classics_SLES52508.pkg",
-    "source": "original",
-    "mtime": "1610375443",
-    "size": "2789704368",
-    "md5": "1c438484de6202005991adfa78d67150",
-    "crc32": "dd637b16",
-    "sha1": "22c757d41674db28043670b358146d3cd6d311d5",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Obscure_PS2_Classics_SLES52508.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Obscure_The_Aftermath_PS2_Classics_SLUS21709.pkg",
-    "source": "original",
-    "mtime": "1610375754",
-    "size": "2089679600",
-    "md5": "75dfd385adb526566ee127b5f9e2522f",
-    "crc32": "3ff63573",
-    "sha1": "2bd4825c50b102e90ebc62764efbf4fb83a6a011",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Obscure_The_Aftermath_PS2_Classics_SLUS21709.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "Europe/Persona 5 [NPEB02436].pkg",
@@ -941,21 +402,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Persona%205%20%5BNPEB02436%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Playboy_The_Mansion_PS2Classics_SLES52752.pkg",
-    "source": "original",
-    "mtime": "1610375923",
-    "size": "2138100592",
-    "md5": "c2c43c70f1bece475928bfe073091a5d",
-    "crc32": "8cc29e9a",
-    "sha1": "76a9eea6ebedb39eb938685be85f6b92c8d40122",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Playboy_The_Mansion_PS2Classics_SLES52752.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Rain [NPUA80719].pkg",
@@ -969,7 +417,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Rain%20%5BNPUA80719%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Ratchet and Clank Future - Quest For Booty [NPUA80145].pkg",
@@ -983,7 +432,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Ratchet%20and%20Clank%20Future%20-%20Quest%20For%20Booty%20%5BNPUA80145%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Ratchet Deadlocked HD [NPUA80646].pkg",
@@ -997,119 +447,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Ratchet%20Deadlocked%20HD%20%5BNPUA80646%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Rocky_PS2_Classics_SLES51208.pkg",
-    "source": "original",
-    "mtime": "1610381016",
-    "size": "2690331248",
-    "md5": "f6a04f65d91881f500bf0070c577e444",
-    "crc32": "f932e8d7",
-    "sha1": "284b2afe8da09a279ca006bebfdc230c4a30684b",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Rocky_PS2_Classics_SLES51208.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Scarface_The_World_is_Yours_PS2_Classics_SLES54182.pkg",
-    "source": "original",
-    "mtime": "1610393639",
-    "size": "3678605600",
-    "md5": "55ce10031972cb246d0d05bd246ac496",
-    "crc32": "259391d3",
-    "sha1": "e7a91b1586713d89ab47bc29f5635b687af504c6",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Scarface_The_World_is_Yours_PS2_Classics_SLES54182.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Sopranos_The_Road_to_Respect_PS2_Classics_SLES54209.pkg",
-    "source": "original",
-    "mtime": "1610394160",
-    "size": "4411062192",
-    "md5": "f49925b27ca27820d8328814bd05666a",
-    "crc32": "ebb050ec",
-    "sha1": "f75464db4cdea1c2d49a8c920a1f1faa42f6ab10",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Sopranos_The_Road_to_Respect_PS2_Classics_SLES54209.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Sphinx_and_The_Cursed_Mummy_PS2_Classics_SLES5183.pkg",
-    "source": "original",
-    "mtime": "1610394691",
-    "size": "2918849792",
-    "md5": "4d60345ba7f9eca669eb53ae9d345685",
-    "crc32": "da0d2412",
-    "sha1": "daec0ae62d8ccae3143e67fcebb66d25bf638d53",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Sphinx_and_The_Cursed_Mummy_PS2_Classics_SLES5183.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Spider-Man_2_PS2_Classics_SLES52372.pkg",
-    "source": "original",
-    "mtime": "1610394807",
-    "size": "4160762176",
-    "md5": "823378a746b7f370f41c36e5274163b0",
-    "crc32": "4252616d",
-    "sha1": "d49c3a580c73663a0a92edc1f9a1335db166d52e",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Spider-Man_2_PS2_Classics_SLES52372.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Spider-Man_PS2_Classics_SLES50965.pkg",
-    "source": "original",
-    "mtime": "1610447971",
-    "size": "3106574912",
-    "md5": "dc1cf6b806f18782316808aa193f0c29",
-    "crc32": "6ffd67a9",
-    "sha1": "df10937fb6716a15d3e9ad3e6329c1554008de4f",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Spider-Man_PS2_Classics_SLES50965.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "SSX_TRICKY_by_MoNsTeR.pkg",
-    "source": "original",
-    "mtime": "1610448226",
-    "size": "2929680400",
-    "md5": "ed4c8dbdf4d872e3bd7c43208ff7385d",
-    "crc32": "46a5dfb2",
-    "sha1": "368e17c67cb92421f94e7f6c6a5ec8abdc3cef14",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/SSX_TRICKY_by_MoNsTeR.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "Summer_Heat_Beach_Volleyball_PS2_Classics_SLES51778.pkg",
-    "source": "original",
-    "mtime": "1610448326",
-    "size": "1845348560",
-    "md5": "e30893f40386b344c15043571b3450c6",
-    "crc32": "88b16285",
-    "sha1": "defd5ecea1540e9874b6c6c06a816e37862ff13e",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Summer_Heat_Beach_Volleyball_PS2_Classics_SLES51778.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "PS2/The Simpsons Hit and Run (PS2).pkg",
@@ -1122,63 +461,8 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/The%20Simpsons%20Hit%20and%20Run%20(PS2).pkg",
     "platform": "PS2",
-    "server": "https://archive.org/metadata/ps3_jogos"
-  },
-  {
-    "name": "The_DaVinci_Code_PS2_Classics_SLUS21443.pkg",
-    "source": "original",
-    "mtime": "1610448566",
-    "size": "3444749088",
-    "md5": "edf4d8f18d41524a3829b1031efc564d",
-    "crc32": "3c1fc2da",
-    "sha1": "a0766c6c0d4577f6f50d4e5a9c6d2af518ec5bd2",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/The_DaVinci_Code_PS2_Classics_SLUS21443.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "The_King_Of_Fighters_2002_-_Unlimited_Match.pkg",
-    "source": "original",
-    "mtime": "1610468819",
-    "size": "4226219792",
-    "md5": "73279b5dc4db3d78d34f0e38c9000793",
-    "crc32": "39f60385",
-    "sha1": "3ff1c320b3b397275be4d5e64e95d72ac947a1a1",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/The_King_Of_Fighters_2002_-_Unlimited_Match.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "The_Simpsons_Game_SLUS21665.pkg",
-    "source": "original",
-    "mtime": "1610468985",
-    "size": "3806997232",
-    "md5": "99db14bbcda3d81ce8e0c8dd940c39f9",
-    "crc32": "2be86825",
-    "sha1": "f2a468051b1eb1845bdbe17f3b7ff3e3319bfd27",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/The_Simpsons_Game_SLUS21665.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
-  },
-  {
-    "name": "The_Simpsons_Road_Rage_SLES50628.pkg",
-    "source": "original",
-    "mtime": "1610469109",
-    "size": "2510229232",
-    "md5": "efc9343b5e772c362e55204d75f99604",
-    "crc32": "f1def282",
-    "sha1": "12cf1928830a350936e89ea840e042da4415427c",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/The_Simpsons_Road_Rage_SLES50628.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
   },
   {
     "name": "USA/Tony Hawk's Pro Skater HD [NPUB30732].pkg",
@@ -1192,21 +476,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Tony%20Hawk's%20Pro%20Skater%20HD%20%5BNPUB30732%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
-  },
-  {
-    "name": "Torrente_3_El_Protector_SLES53979.pkg",
-    "source": "original",
-    "mtime": "1610469262",
-    "size": "4269520288",
-    "md5": "b87948239f25c05572a0a9a2c88538bc",
-    "crc32": "4fbdd1cf",
-    "sha1": "01211e1107efe3dbc218c536de37cd5892bfcc92",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/alone-in-the-dark-the-new-nightmare/Torrente_3_El_Protector_SLES53979.pkg",
-    "platform": "PS2",
-    "server": "https://archive.org/metadata/alone-in-the-dark-the-new-nightmare"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "USA/Wipeout HD [NPUA80105].pkg",
@@ -1220,7 +491,8 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Wipeout%20HD%20%5BNPUA80105%5D.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   },
   {
     "name": "Europe/WRC Powerslide.pkg",
@@ -1234,6 +506,7 @@
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/Europe/WRC%20Powerslide.pkg",
     "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games"
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
   }
 ]
