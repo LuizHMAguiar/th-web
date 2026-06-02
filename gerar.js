@@ -306,7 +306,7 @@ async function gerar() {
     console.warn('Não foi possível limpar jogos.json antes de gerar:', err.message);
   }
 
-  // Ler jogos_fixos.json apenas para enriquecer registros existentes (não adicionar novos)
+  // Ler jogos_fixos.json para inserir registros fixos na lista final
   const fixedPath = 'jogos_fixos.json';
   let fixedItems = [];
   if (fs.existsSync(fixedPath)) {
@@ -333,21 +333,47 @@ async function gerar() {
     if (name) fixedByName[name] = item;
   });
 
-  // Enriquecer apenas os jogos obtidos dos servidores
-  const enriched = unicos.map(j => {
+  // Mesclar registros do servidor com registros fixos
+  const merged = unicos.map(j => {
     const url = j.download_url || null;
     const name = j.name || null;
     const fixed = (url && fixedByUrl[url]) || (name && fixedByName[name]);
     if (!fixed) return j;
-    // Copiar campos úteis de fixed para o item gerado somente se estiverem faltando
-    return Object.assign({}, j, {
-      cover: j.cover || fixed.cover || null,
-      size: j.size || fixed.size || j.size,
-      server: j.server || fixed.server || j.server
-    });
+    const mergedItem = Object.assign({}, j);
+    if (!mergedItem.cover) mergedItem.cover = fixed.cover || null;
+    if (!mergedItem.size) mergedItem.size = fixed.size || "";
+    if (!mergedItem.platform) mergedItem.platform = fixed.platform || j.platform;
+    if (!mergedItem.server) mergedItem.server = fixed.server || j.server;
+    return mergedItem;
   });
 
-  enriched.sort(function (a, b) {
+  // Adicionar registros fixos que ainda não existem na lista de servidores
+  fixedItems.forEach(item => {
+    if (!item) return;
+    const url = item.download_url || item.url || null;
+    const name = (typeof item.name === 'string' && item.name) || (typeof item === 'string' && item) || null;
+    const existsByUrl = url && merged.some(entry => entry.download_url === url);
+    const existsByName = !existsByUrl && name && merged.some(entry => entry.name === name);
+    if (!existsByUrl && !existsByName) {
+      merged.push(Object.assign({}, item, {
+        name: item.name || name,
+        download_url: item.download_url || item.url || null,
+        size: item.size || "",
+        platform: item.platform || "PS2"
+      }));
+    }
+  });
+
+  const finalList = [];
+  const seen = new Set();
+  merged.forEach(item => {
+    const key = item.download_url || item.name;
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    finalList.push(item);
+  });
+
+  finalList.sort(function (a, b) {
     var A = stripPrefix(a.name || '').toLowerCase();
     var B = stripPrefix(b.name || '').toLowerCase();
     if (A < B) return -1;
@@ -355,8 +381,8 @@ async function gerar() {
     return 0;
   });
 
-  fs.writeFileSync('jogos.json', JSON.stringify(enriched, null, 2));
-  console.log('jogos.json atualizado com os arquivos atualmente disponíveis nos servidores.');
+  fs.writeFileSync('jogos.json', JSON.stringify(finalList, null, 2));
+  console.log('jogos.json atualizado com os arquivos de servidores e os registros de jogos_fixos.json.');
 }
 
 gerar().catch(err => {
