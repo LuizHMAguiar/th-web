@@ -100,30 +100,6 @@
     "cover": null
   },
   {
-    "name": "Burnout (PS2).pkg",
-    "download_url": "https://download1501.mediafire.com/skvnmtma4efgOkbSaVvhuJXMUO_QNd-xhiz6paxgS2yOQtgMMopRfk3IYKY46EhgDnwRxR_DqDEtluTTOZczEHYibHi3jcNlttz4yeG44W8QObhJHM9f-_yLKW6tRoFXSYTdWm2M9s_9NeBJ1ilfh3sbn3qf5Ex_gCDeHZSfGlMhTlY/npkmjh0aqhv9lm2/Burnout+by+Easy.pkg",
-    "platform": "PS2",
-    "size": 0,
-    "cover": null,
-    "server": "fixos"
-  },
-  {
-    "name": "Burnout 2: Point of Impact (PS2).pkg",
-    "download_url": "https://download1591.mediafire.com/4dnmepz7cfjg-WKbD1GQaQCAdVbrivmvMMymE-gLuqfFi3yGLa_vBIhvyRTBlU18Vw7CnDgM3sfJptuyFVoFipd7iFIhbYCGLXDYGh3FeqboEvLSfKvHBVfnEX6EBqMFxKpfZR_6as-CVIEDFMhPzYxxuNkkVbKw5ydK5s8CQ3iQIaY/rm4f44pyxal1glk/Burnout+2+Point+of+Impact+By+Easy.pkg",
-    "platform": "PS2",
-    "size": 0,
-    "cover": null,
-    "server": "fixos"
-  },
-  {
-    "name": "Burnout 3: Takedown (PS2).pkg",
-    "download_url": "https://download2295.mediafire.com/etnr33pjq1tgHNcYppJ36Oj8diIAds7zdM_TbzsbcR0FH3_xHuHaCkzmnRFfVBH3xZE6QxuqltRh5eGFey1_Ob6pd3s_s-AwmUwHF5u8Aevjc7xz3aSUSd8TzV0cnmfyIUKeGuzYYl9396HgoSx8OWSe17ncMPGj8K1N3ECGiN9uxcM/grpcy32rzg8rjeh/Burnout+3+Takedown+by+Easy.pkg",
-    "platform": "PS2",
-    "size": 0,
-    "cover": null,
-    "server": "fixos"
-  },
-  {
     "name": "USA/Dead Nation.pkg",
     "source": "original",
     "mtime": "1703125192",
@@ -242,21 +218,6 @@
     "cover": null
   },
   {
-    "name": "Europe/Hatsune Miku Project Diva F [NPEB01393].pkg",
-    "source": "original",
-    "mtime": "1658543888",
-    "size": "6067659552",
-    "md5": "f866892df9b386b1270a10dcf5be91d4",
-    "crc32": "d08718e5",
-    "sha1": "0a2fcc7e16a4b96831a2fb988845974965c9535c",
-    "format": "Unknown",
-    "private": "true",
-    "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Hatsune%20Miku%20Project%20Diva%20F%20%5BNPEB01393%5D.pkg",
-    "platform": "PS3",
-    "server": "https://archive.org/metadata/ps3-pkg-games",
-    "cover": null
-  },
-  {
     "name": "Europe/Hatsune Miku Project Diva F 2nd [NPEB02013].pkg",
     "source": "original",
     "mtime": "1658542239",
@@ -267,6 +228,21 @@
     "format": "Unknown",
     "private": "true",
     "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Hatsune%20Miku%20Project%20Diva%20F%202nd%20%5BNPEB02013%5D.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
+  },
+  {
+    "name": "Europe/Hatsune Miku Project Diva F [NPEB01393].pkg",
+    "source": "original",
+    "mtime": "1658543888",
+    "size": "6067659552",
+    "md5": "f866892df9b386b1270a10dcf5be91d4",
+    "crc32": "d08718e5",
+    "sha1": "0a2fcc7e16a4b96831a2fb988845974965c9535c",
+    "format": "Unknown",
+    "private": "true",
+    "download_url": "https://archive.org/download/ps3-pkg-games/Europe/Hatsune%20Miku%20Project%20Diva%20F%20%5BNPEB01393%5D.pkg",
     "platform": "PS3",
     "server": "https://archive.org/metadata/ps3-pkg-games",
     "cover": null
