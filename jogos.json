@@ -256,6 +256,20 @@
     "cover": null
   },
   {
+    "name": "Guitar Hero - World Tour [PS2 Classics] [SLUS21781].pkg",
+    "source": "original",
+    "mtime": "1780504235",
+    "size": "8574437744",
+    "md5": "22a963668c833e83e9504f448e86c2c1",
+    "crc32": "717ba5de",
+    "sha1": "6cc20210e0a2f6b10963e53fa78c4460062e0c2e",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/Guitar%20Hero%20-%20World%20Tour%20%5BPS2%20Classics%5D%20%5BSLUS21781%5D.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
+  },
+  {
     "name": "USA/Hard Corps Uprising Trial [NPUB30096].pkg",
     "source": "original",
     "mtime": "1697318123",
@@ -489,6 +503,20 @@
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Ratchet%20Deadlocked%20HD%20%5BNPUA80646%5D.pkg",
     "platform": "PS3",
     "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
+  },
+  {
+    "name": "Saint Seiya - Sanctuary Juu Ni Kyuu Hen (BR) [PS2 Classics] [SLES54162].pkg",
+    "source": "original",
+    "mtime": "1780504311",
+    "size": "2105981216",
+    "md5": "0daae428fd758a7b47bb46a4affbe1f5",
+    "crc32": "1b0cff2e",
+    "sha1": "1d3ed7523e9a64c14d42f3bbb4c10d674b206c43",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/Saint%20Seiya%20-%20Sanctuary%20Juu%20Ni%20Kyuu%20Hen%20(BR)%20%5BPS2%20Classics%5D%20%5BSLES54162%5D.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
   {
