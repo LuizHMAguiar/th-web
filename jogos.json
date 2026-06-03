@@ -198,7 +198,21 @@
     "platform": "PS2"
   },
   {
-    "name": "God of War HD [NPUA80490] 1.01 Ru.pkg",
+    "name": "PS3/God of War 2 HD [NPEA00256].pkg",
+    "source": "original",
+    "mtime": "1780508986",
+    "size": "6732472704",
+    "md5": "bbeea2228654c2304d8de173e74b2f89",
+    "crc32": "17bd7af9",
+    "sha1": "ced4845958f0c9531f3a0d93f21375764a97f74d",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/PS3/God%20of%20War%202%20HD%20%5BNPEA00256%5D.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
+  },
+  {
+    "name": "PS3/God of War HD [NPUA80490] 1.01 Ru.pkg",
     "source": "original",
     "mtime": "1780500543",
     "size": "6332341456",
@@ -206,13 +220,13 @@
     "crc32": "7a92f6cb",
     "sha1": "c2c068f4129a29a72a42ce1a1f93d616cc3b1e18",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/God%20of%20War%20HD%20%5BNPUA80490%5D%201.01%20Ru.pkg",
+    "download_url": "https://archive.org/download/ps3_jogos/PS3/God%20of%20War%20HD%20%5BNPUA80490%5D%201.01%20Ru.pkg",
     "platform": "PS3",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
   {
-    "name": "God of War HD [NPUA80490] HEN Fix.pkg",
+    "name": "PS3/God of War HD [NPUA80490] HEN Fix.pkg",
     "source": "original",
     "mtime": "1780500551",
     "size": "8825680",
@@ -221,7 +235,7 @@
     "sha1": "f368545254740ea41e910ddd9f3a8bf1c1f6fa81",
     "format": "Unknown",
     "viruscheck": "1780501507",
-    "download_url": "https://archive.org/download/ps3_jogos/God%20of%20War%20HD%20%5BNPUA80490%5D%20HEN%20Fix.pkg",
+    "download_url": "https://archive.org/download/ps3_jogos/PS3/God%20of%20War%20HD%20%5BNPUA80490%5D%20HEN%20Fix.pkg",
     "platform": "PS3",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
@@ -256,7 +270,21 @@
     "cover": null
   },
   {
-    "name": "Guitar Hero - World Tour [PS2 Classics] [SLUS21781].pkg",
+    "name": "Guitar Hero - Metallica [PS2 Classics] [SLUS21843].pkg",
+    "source": "original",
+    "mtime": "1780514772",
+    "size": "8575356048",
+    "md5": "05fe91f6092bb52f1a86dba0c94ad62c",
+    "crc32": "936f97cc",
+    "sha1": "09ba2aab10ca90d3559ed166c0a5f7d98cc8e536",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/Guitar%20Hero%20-%20Metallica%20%5BPS2%20Classics%5D%20%5BSLUS21843%5D.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
+  },
+  {
+    "name": "PS2/Guitar Hero - World Tour [PS2 Classics] [SLUS21781].pkg",
     "source": "original",
     "mtime": "1780504235",
     "size": "8574437744",
@@ -264,8 +292,8 @@
     "crc32": "717ba5de",
     "sha1": "6cc20210e0a2f6b10963e53fa78c4460062e0c2e",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Guitar%20Hero%20-%20World%20Tour%20%5BPS2%20Classics%5D%20%5BSLUS21781%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Guitar%20Hero%20-%20World%20Tour%20%5BPS2%20Classics%5D%20%5BSLUS21781%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
@@ -282,6 +310,20 @@
     "download_url": "https://archive.org/download/ps3-pkg-games/USA/Hard%20Corps%20Uprising%20Trial%20%5BNPUB30096%5D.pkg",
     "platform": "PS3",
     "server": "https://archive.org/metadata/ps3-pkg-games",
+    "cover": null
+  },
+  {
+    "name": "Harry Potter e o Prisioneiro de Azkaban (BR) [PS2 Classics] [SLES52440].pkg",
+    "source": "original",
+    "mtime": "1780515323",
+    "size": "3554366144",
+    "md5": "a3093fc217dc1856a689d2c7ca42bcfa",
+    "crc32": "fa6d66bf",
+    "sha1": "a4d711c2e2a09dd60042ecb9691839a5cad4e466",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/Harry%20Potter%20e%20o%20Prisioneiro%20de%20Azkaban%20(BR)%20%5BPS2%20Classics%5D%20%5BSLES52440%5D.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
   {
@@ -506,7 +548,7 @@
     "cover": null
   },
   {
-    "name": "Saint Seiya - Sanctuary Juu Ni Kyuu Hen (BR) [PS2 Classics] [SLES54162].pkg",
+    "name": "PS2/Saint Seiya - Sanctuary Juu Ni Kyuu Hen (BR) [PS2 Classics] [SLES54162].pkg",
     "source": "original",
     "mtime": "1780504311",
     "size": "2105981216",
@@ -514,8 +556,8 @@
     "crc32": "1b0cff2e",
     "sha1": "1d3ed7523e9a64c14d42f3bbb4c10d674b206c43",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Saint%20Seiya%20-%20Sanctuary%20Juu%20Ni%20Kyuu%20Hen%20(BR)%20%5BPS2%20Classics%5D%20%5BSLES54162%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Saint%20Seiya%20-%20Sanctuary%20Juu%20Ni%20Kyuu%20Hen%20(BR)%20%5BPS2%20Classics%5D%20%5BSLES54162%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
