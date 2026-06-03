@@ -198,6 +198,35 @@
     "platform": "PS2"
   },
   {
+    "name": "God of War HD [NPUA80490] 1.01 Ru.pkg",
+    "source": "original",
+    "mtime": "1780500543",
+    "size": "6332341456",
+    "md5": "acafa59bff3b224a3b30e6d5ace87ca1",
+    "crc32": "7a92f6cb",
+    "sha1": "c2c068f4129a29a72a42ce1a1f93d616cc3b1e18",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/God%20of%20War%20HD%20%5BNPUA80490%5D%201.01%20Ru.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
+  },
+  {
+    "name": "God of War HD [NPUA80490] HEN Fix.pkg",
+    "source": "original",
+    "mtime": "1780500551",
+    "size": "8825680",
+    "md5": "e585d9d4f827cc0e432483047cf9ade3",
+    "crc32": "414fd0ad",
+    "sha1": "f368545254740ea41e910ddd9f3a8bf1c1f6fa81",
+    "format": "Unknown",
+    "viruscheck": "1780501507",
+    "download_url": "https://archive.org/download/ps3_jogos/God%20of%20War%20HD%20%5BNPUA80490%5D%20HEN%20Fix.pkg",
+    "platform": "PS3",
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
+  },
+  {
     "name": "USA/Gran Turismo HD Concept v1.2 [NPUA80019].pkg",
     "source": "original",
     "mtime": "1658551072",
