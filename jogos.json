@@ -270,7 +270,7 @@
     "cover": null
   },
   {
-    "name": "Guitar Hero - Metallica [PS2 Classics] [SLUS21843].pkg",
+    "name": "PS2/Guitar Hero - Metallica [PS2 Classics] [SLUS21843].pkg",
     "source": "original",
     "mtime": "1780514772",
     "size": "8575356048",
@@ -278,8 +278,8 @@
     "crc32": "936f97cc",
     "sha1": "09ba2aab10ca90d3559ed166c0a5f7d98cc8e536",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Guitar%20Hero%20-%20Metallica%20%5BPS2%20Classics%5D%20%5BSLUS21843%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Guitar%20Hero%20-%20Metallica%20%5BPS2%20Classics%5D%20%5BSLUS21843%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
@@ -294,6 +294,20 @@
     "format": "Unknown",
     "download_url": "https://archive.org/download/ps3_jogos/PS2/Guitar%20Hero%20-%20World%20Tour%20%5BPS2%20Classics%5D%20%5BSLUS21781%5D.pkg",
     "platform": "PS2",
+    "server": "https://archive.org/metadata/ps3_jogos",
+    "cover": null
+  },
+  {
+    "name": "Guitar Hero III - Legends of Rock (BR) [PS2 Classics] [SLUS21672].pkg",
+    "source": "original",
+    "mtime": "1780521566",
+    "size": "3554627008",
+    "md5": "beee56facb298eeaf5af7e15a690ecbf",
+    "crc32": "cf9c53c3",
+    "sha1": "404b187f20d416dff2b275e9849a09a883fecf3c",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/ps3_jogos/Guitar%20Hero%20III%20-%20Legends%20of%20Rock%20(BR)%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
+    "platform": "PS3",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
@@ -313,7 +327,7 @@
     "cover": null
   },
   {
-    "name": "Harry Potter e o Prisioneiro de Azkaban (BR) [PS2 Classics] [SLES52440].pkg",
+    "name": "PS2/Harry Potter e o Prisioneiro de Azkaban (BR) [PS2 Classics] [SLES52440].pkg",
     "source": "original",
     "mtime": "1780515323",
     "size": "3554366144",
@@ -321,8 +335,8 @@
     "crc32": "fa6d66bf",
     "sha1": "a4d711c2e2a09dd60042ecb9691839a5cad4e466",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Harry%20Potter%20e%20o%20Prisioneiro%20de%20Azkaban%20(BR)%20%5BPS2%20Classics%5D%20%5BSLES52440%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Harry%20Potter%20e%20o%20Prisioneiro%20de%20Azkaban%20(BR)%20%5BPS2%20Classics%5D%20%5BSLES52440%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
