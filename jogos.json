@@ -298,7 +298,7 @@
     "cover": null
   },
   {
-    "name": "Guitar Hero III - Legends of Rock (BR) [PS2 Classics] [SLUS21672].pkg",
+    "name": "PS2/Guitar Hero III - Legends of Rock (BR) [PS2 Classics] [SLUS21672].pkg",
     "source": "original",
     "mtime": "1780521566",
     "size": "3554627008",
@@ -306,8 +306,8 @@
     "crc32": "cf9c53c3",
     "sha1": "404b187f20d416dff2b275e9849a09a883fecf3c",
     "format": "Unknown",
-    "download_url": "https://archive.org/download/ps3_jogos/Guitar%20Hero%20III%20-%20Legends%20of%20Rock%20(BR)%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
-    "platform": "PS3",
+    "download_url": "https://archive.org/download/ps3_jogos/PS2/Guitar%20Hero%20III%20-%20Legends%20of%20Rock%20(BR)%20%5BPS2%20Classics%5D%20%5BSLUS21672%5D.pkg",
+    "platform": "PS2",
     "server": "https://archive.org/metadata/ps3_jogos",
     "cover": null
   },
