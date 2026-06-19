@@ -135,6 +135,20 @@
     "cover": null
   },
   {
+    "name": "Guitar Hero Gospel [PS2 Classics] [SLUS25167].pkg",
+    "source": "original",
+    "mtime": "1781871841",
+    "size": "2139117136",
+    "md5": "f52e3b6b3523d89eaf3716a63674650f",
+    "crc32": "4de82bd5",
+    "sha1": "7ea76c5324b6fea51b46ee9ece93364507611a86",
+    "format": "Unknown",
+    "download_url": "https://archive.org/download/guitar-hero-gospel/Guitar%20Hero%20Gospel%20%5BPS2%20Classics%5D%20%5BSLUS25167%5D.pkg",
+    "platform": "PS2",
+    "server": "https://archive.org/metadata/guitar-hero-gospel",
+    "cover": null
+  },
+  {
     "name": "USA/Hard Corps Uprising Trial [NPUB30096].pkg",
     "source": "original",
     "mtime": "1697318123",
